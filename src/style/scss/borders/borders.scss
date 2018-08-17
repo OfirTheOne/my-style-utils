@@ -3,7 +3,7 @@
 
 
 @mixin borderStyling($side, $side_shortcut, $style) {
-    .border-#{side_shortcut}-#{$style} {
+    .border-#{$side_shortcut}-#{$style} {
         border-#{$side}: #{$defaulte_border_width} #{$style};
     }
 }
