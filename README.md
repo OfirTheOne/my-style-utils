@@ -8,7 +8,7 @@ My style utils scss css classes and stuff.
 
 ### Margins Classes :
 
-:one:  -  Margin Surrounder Class
+:one:  # Margin Surrounder Class
 ```  
 class structure :
 -----------------
