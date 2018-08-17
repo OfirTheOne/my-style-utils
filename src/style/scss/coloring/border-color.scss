@@ -1,0 +1,11 @@
+
+@import './variables';
+
+@mixin borderColor($color, $color_name) {
+    .border-#{$color_name} {
+        border-color: #{$color};
+    }
+}
+@for $i from 1 through length($my_colors) {
+    @include borderColor(nth($my_colors, $i), nth($my_colors_names, $i));
+}

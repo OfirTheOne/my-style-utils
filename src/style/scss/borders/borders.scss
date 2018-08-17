@@ -1,0 +1,21 @@
+
+@import './variables';
+
+
+@mixin borderStyling($side, $side_shortcut, $style) {
+    .border-#{side_shortcut}-#{$style} {
+        border-#{$side}: #{$defaulte_border_width} #{$style};
+    }
+}
+
+
+// @for $i from 1 through length($border_sides_config) {
+@each $config in $border_sides_config {
+    @for $i from 1 through length($border_styles) {
+        @include borderStyling(
+            nth($config, 1), 
+            nth($config, 2), 
+            nth($border_styles, $i)
+        );
+    }   
+}

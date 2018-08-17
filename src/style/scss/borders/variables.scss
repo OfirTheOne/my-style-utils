@@ -1,0 +1,11 @@
+
+$defaulte_border_width: 1px;
+
+$solid: 'solid'; $dashed: 'dashed'; $dotted: 'dotted'; $double: 'double';
+$border_styles: $solid, $dashed, $dotted, $double;
+// $border_styles_shortcuts: 'sol', 'dash', 'dot', 'doub';
+
+$top: 'top'; $right: 'right'; $bottom: 'bottom'; $left: 'left';
+$border_sides_config: $top 't', $right 'r', $bottom 'b', $left 'l';
+
+
